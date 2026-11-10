@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <!-- Meta etiketleri ve Sayfa yapılandırması -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vize Tekrar Uygulaması">
+    <meta name="keywords" content="web,vize,bartın üniversitesi,BTBS,html,css">
+    <title>Vizeden Önce Tekrar</title>
+    <!-- 1. Harici CSS Bağlantısı-->
+    <!-- İç CSS ile Stil Tanımlamaları ve İnce Ayarlar -->
+     <link.rel="stylesheet" href="style.css"></link.rel>
+     <style>
+        /* Genel Seçiciler */
+        body { font-family: Arial, Helvetica, sans-serif; margin: 20px; line-height: 1.6;  }
+        /* Class Seçicisi */
+        .BARTIN {font-weight: bold; padding: 5px;}
+        /* ID Seçicileri */
+        #BTBS1 {color: blue;}
+        #BTBS2 {color: red;}
+        /* Tablo Stilleri */
+        table, th, td {border: 1px solid #333; border-collapse: collapse; padding: 8px;}
+        th {background-color: #f2f2f2;}
+        /* Gruplama Seçicisi */
+        h1, h2, h3 {color: #333;}
+     </style>
+</head>
+<body>
+    <!-- Öğrenci Bilgisi Açıklama Satırı -Alperen Gökce- -->
+     <!-- Semantik Header Bölümü -->
+      <header>
+        <h1> Web Tasarımı I dersi vize hazırlık programına hoş geldiniz! </h1>
+        <p> Bu sayfada 7 haftalık ders müfredatının tüm temel HTML etiketleri uygulanacaktır.</p>
+      </header>
+
+      <hr>
+
+      <!-- Başlık Hiyalerşisi ve Metin Biçimlendirme -->
+       <section>
+        <h2> Bölüm 1: Başlıklar ve Metin Biçimlendirmeleri</h2>
+        <!-- H1 - H6 Başlık Örnekleri -->
+         <h1>Bilgisayar</h1>
+         <h2>Teknolojisi</h2>
+         <h3>Ve</h3>
+         <h4>Bilişim</h4>
+         <h5>Sistemleri</h5>
+         <h6>Bölümü</h6>
+         
+         <!-- Özel Arttribute İçeren Paragraflar -->
+          <p id="BTBS1" class="BARTIN" title="Paragraf 1"> Bu paragraf <strong>ID: BTBS2</strong>, <em>CLASS: BARTIN</em>ve mavi renge sahiptir.</p>
+          <!-- Metin Biçimlendirme Etiketleri -->
+           <p>
+            Metinler içerisinde <b>koyu (b)</b>,<strong>önemli (strong)</strong>,<i>eğik (i)</i>,<em>vurgulu (em)</em>,<u>altı çizili (u)</u>,<mark>fosforlu (mark)</mark>
+            <sub>alt simge (sub)</sub> ve <sup>üst simge (sup)</sup> kullanılabilir. <br>
+            Ayrıca kod blogları için <code><console.log (Merhaba Dünya);></code> ve biçimlendirilmiş metinler için:
+           </p>
+           <pre>
+            Satır 1: Girintili kod
+            Satır 2: Olduğu Gibi Korunan Alan
+           </pre>
+       </section>
+       
+       <hr>
+
+       <!-- Listeler, Bağlantılar ve Görseller -->
+        <section>
+            <h2>Bölüm 2: Listeler, Bağlantılar ve Görseller</h2>
+            <h3>Sınırsız Liste (Unordered List)</h3>
+            <ul>
+                <li>HTML5 Yapısı</li>
+                <li>CSS3 Biçimlendirme</li>
+                <li>VS Code Editörü</li>
+            </ul>
+            <h3>Sıralı Liste (Ordered List)</h3>
+            <ol type="1">
+                <li>Slaytların İncelenmesi</li>
+                <li>VS Code Üzeirnde Kodlama</li>
+                <li>Live Server ile Önizleme</li>
+            </ol>
+            <h3>Tanımlama Listesi (Description List)</h3>
+            <dl>
+            <dt><b>HTML:</b></dt>
+            <dd>Hypertext Markup Language - Zengin Metin İşaretleme Dili</dd>
+            <dt><b>VS Code:</b></dt>
+            <dd>Popüler Kod Editörü Yazılımı</dd>
+            </dl>
+            <h3>Bağlantılar (Links)</h3>
+            <p>
+                Dış Bağlantı: <a href="https:.//www.w3schools.com" target="_blank" title="W3Schools Web Sitesi">W3Schools Rehberi</a> <br>
+                E-Posta Bağlantısı: <a href="mailto:ogrenci.bartin.edu.tr">Akademik İletişim</a>
+            </p>
+            <h3> Görsel Ögesi </h3>
+            <figure>
+                <img src="https://via.placeholder.com/300x100" alt="Örnek Görsel" width="300" height="100">
+                <figcaption>Şekil 1: Örnek Web Görseli ve Açıklaması </figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <!-- Tablo Yapıları -->
+         <section>
+            <h2> Bölüm 3: Tablolar (Tables)</h2>
+            <table>
+                <caption><b>Ders Programı ve Not Çizelgesi</b></caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Hafta</th>
+                        <th colspan="2">Ders İçeriği</th>
+                    </tr>
+                    <tr>
+                        <th>Konu</th>
+                        <th>Durum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>HTML Temelleri & Head Etiketleri</td>
+                        <td>Tamamlandı</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Metin ve Paragraf Biçimlendirme</td>
+                        <td>Tamamlandı</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Listeler ve Bağlantılar</td>
+                        <td>Tamamlandı</td>
+                    </tr>
+                </tbody>
+            </table>
+         </section>
+
+         <hr>
+
+<!-- Form Elemanları ve Girdi Türleri -->
+ <section>
+    <h2>Bölüm 4: Etkileşimli Formlar (Forms)</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Öğrenci Kayıt ve Geri Bildirim Formu</legend>
+            <p>
+                <label for="ad">Ad Soyad:</label><br>
+                <input type="text" id="ad" name="ad" placeholder="Adınızı Giriniz" required>
+            </p>
+            <p>
+                <label for="eposta">E-Posta Adresi:</label><br>
+                <input type="email" id="eposta" name="eposta" placeholder="ornek@bartin.edu.tr">
+            </p>
+            <p>
+                <label for="sifre">Şifre:</label><br>
+                <input type="password" id="sifre" name="sifre">
+            </p>
+            <p>
+                <label for="dogum">Doğum Tarihi:</label><br>
+                <input type="date" id="dogum" name="dogum">
+            </p>
+            <p>
+                Cinsiyet:<br>
+                <input type="radio" id="kadin" name="cinsiyet" value="K">
+                <label for="kadin">Kadın</label>
+                <input type="radio" id="erkek" name="cinsiyet" value="E">
+                <label for="erkek">Erkek</label>
+            </p>
+            <p>
+                İlgi Alanları:<br>
+                <input type="checkbox" id="web" name="ilgi" value="web">
+                <label for="web">Web Tasarımı</label>
+                <input type="checkbox" id="mobil" name="ilgi" value="mobil">
+                <label for="mobil">Mobil Programlama</label>
+            </p>
+            <p>
+                <label for="sehir">Şehir Seçiniz:</label><br>
+                <select id="sehir" name="sehir">
+                    <option value="74">Bartın</option>
+                    <option value="34">İstanbul</option>
+                    <option value="06">Ankara</option>
+                </select>
+            </p>
+            <p>
+                <label for="renk">Favori Renk:</label>
+                <input type="color" id="renk" name="renk" value="#ff0000">
+            </p>
+            <p>
+            <label for="dosya">Ödev Dosyası</label>
+            <input type="file" id="dosya" name="dosya">
+            </p>
+            <p>
+                <label for="mesaj">Görüş ve Önerileriniz:</label><br>
+                <textarea id="mesaj" name="mesaj" rows="4" cols="40" placeholder="Mesajınızı buraya yazınız..."></textarea>
+            </p>
+            <p>
+                <input type="submit" value="Formu Gönder">
+                <input type="reset" value="Temizle">
+            </p>
+        </fieldset>
+    </form>
+ </section>
+ <hr>
+ <!-- Bölüm 5: Medya Ögeleri -->
+  <section>
+    <h2> Bölüm 5: Video ve Ses İşlemleri</h2>
+    <h3> 1. Video Oynatma (<video>)</h3>
+        <!-- Tek Kaynaklı Basit Kullanım -->
+         <video src="bartin.mp4.mp4" width="400" height="250" controls autoplay muted loop preload="auto">
+            Tarayıcınız video etiketini desteklemiyor.
+         </video>
+         <!-- Çapraz Tarayıcı Desteği İçin Çoklu Kaynak Kullanımı -->
+          <h4> Çoklu Format Destekli Video: </h4>
+          <video width="320" height="240" controls>
+            <source src="bartin.mp4.mp4" type="Video/mp4">
+            <source src="bartin.webm.mp4" type="Video/webm">
+            <source src="bartin.ogg.mp4" type="Video/ogg">
+          </video>
+          <h3> 2. Ses Oynatma (<audio>)</h3>
+            <audio src="bartin.mp3.mpeg" controls loop>
+                Tarayıcınız ses etiketini desteklemiyor.
+            </audio>
+  </section>
+  <hr>
+  <!-- Bölüm 6: CSS kullanımı ve Öncelik Sırası -->
+   <section>
+    <h2> Bçlüm 6: CSS Kullanım Türleri ve Öncelik Sırası </h2>
+
+    <!-- Satır İçi (Inline) CSS - En Yüksek Öncelik -->
+     <p style="color: red; font-weight: bold;">
+        Bu metin Satır İçi (Inline) CSS ile kırmızı yapılmıştır (En Yüksek Öncelik).
+     </p>
+
+     <!-- Gruplama ve ID / Class Seçici Örnekleri -->
+      <p id="BTBS1" class="BARTIN">
+        Bu paragraf ID (#BTBS1) ve Class (.BARTIN) seçicileri ile head bölümündeki Dahili CSS'ten stil alır.
+      </p>
+   </section>
+   <hr>
+   <!-- Bölüm 7: Temel JavaScript ve Çıktı Metotları -->
+    <section>
+        <h2> Bölüm 7: Temel JavaScript Uygulamaları </h2>
+
+        <!-- innerHTML ile içeriği değişecek dinamik alan -->
+         <p id="js-demo">Bu metin JavaScript çalışınca değişecektir.</p>
+         <button type="button" onclick="degistir()">İçeriği Değiştir</button>
+
+         <script>
+            // 1. Değişken Tanımlama ve Hesaplama
+            var x = 1, y = 2, toplam = 0;
+            toplam = x + y;
+
+            // 2. Çıktı Yöntemleri (Vizede Çıkacak 4 Metot)
+            // A. innerHTML: HTML Ögesinin İçeriğini Değiştirme
+            function degistir() {
+                document.getElementById("js-demo").innerHTML = "<b> JavaScript ile metin güncellendi! Toplam: " + toplam + "</b>";
+
+            }
+
+            //B. Console.log: Tarayıcı Konsoluna Yazma
+            console.log("Hesaplanan Toplam Değeri: " + toplam);
+            
+            //C. alert: Açılır Pencere Uyarısı (İsteğe Bağlı Aktif Edilebilir)
+            alert("Sayfaya Hoş Geldiniz! Toplam: " + toplam);
+
+            //D. document.write: Doğrudan Belgeye Yazma
+            document.write("Sayfa Sonuna eklenen JS Metni");
+         </script>
+    </section>
+ <!-- Semantik Footer Bölümü -->
+  <footer>
+    <hr>
+    <p>&copy; 2026 Bartın üniversitesi - BTBS Web Tasarımı Vize Çalışma Notları</p>
+  </footer>
+</body>
+</html>
